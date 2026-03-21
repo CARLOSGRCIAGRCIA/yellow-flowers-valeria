@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy Flowers - SPA</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="not-loaded">
+    <canvas id="galaxy-canvas"></canvas>
+    
+    <div class="shooting-stars">
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-btn" data-route="home">Inicio</button>
+    </nav>
+    
+    <div id="entry-overlay" class="entry-overlay">
+      <div class="entry-content">
+        <div class="entry-heart">💛</div>
+        <p class="entry-text">Para ti, Valeria</p>
+        <button id="enter-btn" class="enter-btn">Entrar al cosmos</button>
+      </div>
+    </div>
+
+    <div id="app"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
