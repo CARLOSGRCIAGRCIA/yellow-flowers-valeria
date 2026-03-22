@@ -10,23 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initGalaxy();
   initLyrics();
   
-  const overlay = document.getElementById('entry-overlay');
-  const enterBtn = document.getElementById('enter-btn');
-  
-  if (overlay && enterBtn) {
-    enterBtn.addEventListener('click', () => {
-      overlay.classList.add('hidden');
-      initBackgroundMusic();
-      setTimeout(() => {
-        overlay.style.display = 'none';
-      }, 500);
-    });
-  }
-  
-  setTimeout(() => {
-    document.body.classList.remove('not-loaded');
-  }, 100);
-  
   function createShootingStar() {
     const star = document.createElement('div');
     star.className = 'shooting-star';
@@ -42,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, Math.random() * 5000 + 3000);
 });
 
-function initBackgroundMusic() {
+window.initBackgroundMusic = function() {
   if (backgroundAudio) {
     backgroundAudio.pause();
     backgroundAudio.src = '';
@@ -63,6 +46,6 @@ function initBackgroundMusic() {
       backgroundAudio.play().catch(() => {});
     }
   }, 1000);
-}
+};
 
 window.getBackgroundAudio = () => backgroundAudio;

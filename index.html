@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>Galaxy Flowers - SPA</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
@@ -22,15 +25,9 @@
 
     <nav class="nav">
       <button class="nav-btn" data-route="home">Inicio</button>
+      <button class="nav-btn" data-route="about">Acerca de</button>
+      <button class="nav-btn" data-route="music">Música</button>
     </nav>
-    
-    <div id="entry-overlay" class="entry-overlay">
-      <div class="entry-content">
-        <div class="entry-heart">💛</div>
-        <p class="entry-text">Para ti, Valeria</p>
-        <button id="enter-btn" class="enter-btn">Entrar al cosmos</button>
-      </div>
-    </div>
 
     <div id="app"></div>
 
